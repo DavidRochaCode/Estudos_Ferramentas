@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="AssetsAvaliacao/favicon.ico" type="image/x-icon">
+    <title>Meta Diária</title>
+    <link rel="stylesheet" href="styleDiaria.css">
+</head>
+
+<body>
+    <main class="principal">
+        <h1>Meta Diária</h1>
+        <div class="shadowbox" id="shadow">
+            <p> <strong class="paragrafo">Digite quantas questões você acertou</strong></p><br>
+            <div class="inputs">
+                <input type="number" id="acertos"><br><br>
+                <input class="prosseguir" type="button" value="Verificar" onclick="ir()">
+                <section> <br><br>
+                    <div id="barra"></div>
+                </section>
+                <div id="informaçao"></div>
+            </div>
+        </div>
+        <div id="voltar" class="voltar"><a href="indexPainel.html"><input id="back" type="button" value="Voltar"></a></div>
+    </main>
+    <script src="scriptDiaria.js"></script>
+</body>
+
+</html>

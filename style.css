@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    animation: colors 9s ease infinite;
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4, #9796f0);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    font-weight: 500;
+    background-size: 500% 500%;
+    align-items: center;
+    margin: 0;
+
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #2d2a3b;
+
+}
+
+main h1 {
+    color: #2d2a3b;
+    font-size: 48px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+main form label input {
+    background-color: #2d2a3b;
+    width: 600px;
+    height: 40px;
+    padding: 0 0.5rem;
+    outline: none;
+    color: #9dc5e4d8;
+    font-size: 1rem;
+    border: 1px solid #2d2a3b;
+    border-radius: 8px;
+
+}
+
+.botaoInicio{
+    width: 30%;
+    height: 30px;
+    margin-top: 4rem;
+    color: #2d2a3b;;
+    border: 0;
+    border-radius: 32px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(#9796f0, #fbc7d4);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.botaoInicio:hover {
+    background-image: linear-gradient(#c5c4f6, #d1728a);
+}
+
+
+.container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: linear-gradient(to right, #182438, #243b55, #3f4c6b, #2c3e50);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    display: inline;
+    color: #9dc5e4d8;
+
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    background: none;
+    cursor: pointer;
+    color: rgb(197, 207, 221);
+    align-items: center;
+    transition: all .2s ease-in-out;
+
+}
+
+.close:hover {
+    color: #ab4848;
+}
+
+
+
+.frases {
+    position: relative;
+
+
+}
+
+#link {
+
+    cursor: pointer;
+    color: #82a2a7;
+    transition: all .2s ease-in-out;
+    background: none;
+    text-decoration: none;
+
+
+}
+
+
+#link:hover {
+    color: #da77bcdc;
+}
+
+@media only screen and (max-width: 728px) {
+    main h1 {
+        font-size: 46.4px;
+        text-align: center;
+        width: 100vw;
+
+    }
+
+    main form label input {
+        width: 500px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    #popup {
+        width: 90vw;
+        text-align: justify;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 479px) {
+    main h1 {
+        font-size: 30.4px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    main form label input {
+        width: 300px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width:425px) {
+
+
+    main h1 {
+        font-size: 30.4px;
+        text-align: center;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    main h1 {
+        font-size: 30.4px;
+        text-align: center;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 357px) {
+    main h1 {
+        font-size: 20.8px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    main form label input {
+        width: 250px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    main h1 {
+        font-size: 20.8px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    main form label input {
+        width: 250px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    main form input[type="button"] {
+        font-size: 0.8rem;
+        text-align: center;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 285px) {
+    main h1 {
+        font-size: 11, 2px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    main form label input {
+        width: 150px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    main form input[type="button"] {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}

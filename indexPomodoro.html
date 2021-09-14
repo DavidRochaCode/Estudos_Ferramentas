@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePomodoro.css">
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <aside id="menuOculto" class="menuOculto">
+        <a href="javascript:void(0)" id="btnFechar" class="btnFechar">&times;</a>
+        <a href="indexHomePage.html">Home</a>
+        <a href="index.html">logout</a>
+        <a href="">Sugestões</a>
+    </aside>
+
+    <section id="principal">
+        <span id="btn" class="btn" style="font-size: 30px;cursor: pointer;">&#9776;</span>
+        <p>Menu</p>
+    </section>
+
+
+    <div  id="container" class="container">
+        <h1 id="titulo">Pomodoro</h1>
+        <div class="controle">
+            <p>Defina o tempo:</p>
+            <abbr title="Digite o tempo em minutos. Converta horas para minutos caso necessário"> <input type="number" id="numero" placeholder="Minutos" min="1"></abbr>
+            <div id="mostrador" class="mostrador">00:00</div>
+            <div id="paraTodos"></div>
+        </div>
+        <div id="mens" class="informa"></div>
+    </div>
+    <div id="relogio" class="relogio"></div>
+    <script src="scriptPomodoro.js"></script>
+</body>
+
+</html>

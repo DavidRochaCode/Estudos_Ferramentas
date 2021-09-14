@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-image: linear-gradient(to right, #d897a7, #9796f0);
+    color: #2d2a3b;
+    height: 100%;
+    
+}
+
+.menuOculto{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d2a3b;
+    overflow-x:hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.menuOculto a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #c5c4f6;
+    display: block;
+    transition: 0.3s;
+    width: 100px;
+}
+
+.menuOculto a:hover{
+    color: #d897a7;
+}
+
+ #btnFechar{
+    position: absolute;
+    top: 0;
+    right: 23px;
+    font-size: 30px;
+    margin-left: 50px;
+    width: 0;
+
+}
+
+#principal{
+    padding: 16px;
+    transition: margin-left 0.5s;
+    width: 80px;
+    display: inline-block;
+    
+}
+
+.btn{
+    transition: 0.3s;
+}
+
+.btn:hover{
+    color: indianred;
+}
+@media screen and(max-height: 450px ){
+    .menuOculto{
+        padding-top: 15px;
+    }
+
+    .menuOculto a{
+        font-size: 18px;
+    }
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #2d2a3b;
+
+}
+
+.controle,
+.relogio {
+    width: 175px;
+    margin: auto;
+    color: #2d2a3b;
+}
+
+.controle {
+    animation: colors 20s ease infinite;
+    border: 0px solid black;
+    padding: 50px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4, #9796f0);
+    background-size: 600% 600%;
+    
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.relogio {
+    text-align: center;
+    margin-top: 200px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#numero {
+    margin-bottom: 10px;
+    background-color: #2d2a3b;
+    outline: none;
+    color: #9dc5e4d8;
+    border: 1px solid #2d2a3b;
+    border-radius: 8px;
+    padding: 0 0.5rem;
+    height: 20px;
+
+}
+
+#definir,
+#parar,
+#terminar {
+    margin-top: 10px;
+    text-decoration: none;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(#9796f0, #fbc7d4);
+    transition: all .5s ease-in-out;
+    color: #2d2a3b;
+
+}
+
+#definir:hover {
+    background-image: linear-gradient(#c5c4f6, #d1728a);
+}
+
+#parar:hover {
+    background-image: linear-gradient(#c5c4f6, #d1728a);
+}
+
+#terminar:hover {
+    background-image: linear-gradient(#c5c4f6, #d1728a);
+}

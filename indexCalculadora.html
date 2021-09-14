@@ -1,0 +1,76 @@
+<!-- Designined by CodingLab -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Glassmorphism Calculator| CodingLab </title>
+    <link rel="stylesheet" href="styleCalculadora.css">
+   </head>
+<body>
+
+  <aside id="menuOculto" class="menuOculto">
+    <a href="javascript:void(0)" id="btnFechar" class="btnFechar">&times;</a>
+    <a href="indexHomePage.html">Home</a>
+    <a href="index.html">logout</a>
+    <a href="">Sugestões</a>
+</aside>
+
+<section id="principal">
+    <span id="btn" class="btn" style="font-size: 30px;cursor: pointer;">&#9776;</span>
+    <p>Menu</p>
+</section>
+
+ <div class="container">
+   <form action="#" name="forms">
+     <input type="text" name="answer">
+     <div class="buttons">
+       <input type="button" value="AC" onclick="forms.answer.value = ''">
+       <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)">
+       <input type="button" value="%" onclick="forms.answer.value += '%'">
+       <input type="button" value="/" onclick="forms.answer.value += '/'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="7" onclick="forms.answer.value += '7'">
+       <input type="button" value="8" onclick="forms.answer.value += '8'">
+       <input type="button" value="9" onclick="forms.answer.value += '9'">
+       <input type="button" value="*" onclick="forms.answer.value += '*'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="4" onclick="forms.answer.value += '4'">
+       <input type="button" value="5" onclick="forms.answer.value += '5'">
+       <input type="button" value="6" onclick="forms.answer.value += '6'">
+       <input type="button" value="-" onclick="forms.answer.value += '-'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="1" onclick="forms.answer.value += '1'">
+       <input type="button" value="2" onclick="forms.answer.value += '2'">
+       <input type="button" value="3" onclick="forms.answer.value += '3'">
+       <input type="button" value="+" onclick="forms.answer.value += '+'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="0"  onclick="forms.answer.value += '0'">
+       <input type="button" value="00" onclick="forms.answer.value += '00'">
+       <input type="button" value="." onclick="forms.answer.value += '.'">
+       <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+     </div>
+   </form>
+ </div>
+
+ <script>
+   //script da Barra Lateral
+
+document.getElementById('principal').addEventListener('click', abrir)
+document.getElementById('btnFechar').addEventListener('click', fechar)
+
+function abrir(){
+    document.getElementById('menuOculto').style.width ='250px'
+    
+}
+
+function fechar(){
+    document.getElementById('menuOculto').style.width ='0'
+    
+}
+ </script>
+</body>
+</html>
