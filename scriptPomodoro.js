@@ -58,7 +58,7 @@ function start() {
                     ss = 0
                     document.getElementById('mostrador').innerHTML = "00:00"
                     var mens = document.getElementById('mens')
-                    mens.innerHTML = `<audio id="musica" src="AssetsPomodoro/song.mp3" autoplay></audio>`
+                    mens.innerHTML = `<audio id="musica" src="song.mp3" autoplay></audio>`
                     input.innerHTML = `<input id = "terminar" type="button" value="Terminar"></input>`
                     document.getElementById('terminar').addEventListener("click", replay)
 
